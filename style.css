@@ -1,0 +1,246 @@
+# rs-date
+Our Relationship Date
+/* Created by Kyaw Zin Aung */
+
+
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+body{
+
+   height:100vh;
+
+   display:flex;
+
+   align-items:center;
+
+   justify-content:center;    
+
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://i.ibb.co/9W4p90z/background.gif") no-repeat center / cover ; 
+
+   
+
+}
+
+/*
+
+.wrapper{
+
+}
+
+*/
+
+.title{
+
+   color:#fff;
+
+   text-align:center;
+
+   margin:2rem 0;
+
+   font-size:5rem;
+
+   letter-spacing:4px;
+
+   font-weight: bolder;
+
+   user-select: none;
+
+   font-family: 'Charm', cursive; 
+
+   animation: changeColor 3s infinite;
+
+}
+
+@keyframes changeColor{
+
+   0%{ color: rgb(32, 207, 16);}
+
+   25%{ color: rgb(219, 253, 28);}
+
+   50%{ color: rgb(16, 162, 207);}
+
+   75%{ color: rgb(207, 16, 182);}
+
+   100%{ color: rgb(245, 155, 21);}
+
+}
+
+
+
+.box-container{
+
+   width:100%;
+
+   margin:auto;
+
+   display:grid;  
+
+   grid-gap:10px; 
+
+   grid-template-columns:repeat(4,1fr); 
+
+}
+
+.box{
+
+   color:#fff;
+
+   text-align:center;    
+
+   padding:1.5rem 0 1rem 0;
+
+   border:2px solid #fff;
+
+}
+
+.digit{
+
+   font-size:5rem;
+
+   font-weight:bolder;
+
+   letter-spacing:5px;
+
+}
+
+label{
+
+   display:block;
+
+   margin-top:10px;
+
+   font-size:1.8rem;
+
+}
+
+.social-media-icons{
+
+  position:absolute;
+
+  bottom:25px;
+
+  list-style:none;
+
+  
+
+}
+
+.social-media-icons li{
+
+  display:inline-block;
+
+  margin:0 7px;
+
+}
+
+.social-media-icons li a{
+
+  color:#fff; 
+
+  font-size:1.7rem; 
+
+  text-align:center;
+
+}
+
+
+
+
+
+@media only screen and (max-width:700px){
+
+   .wrapper{
+
+       width:92%;
+
+   }
+
+   .title{
+
+      font-size: 5rem;
+
+   }
+
+   .digit{
+
+       font-size:3rem;
+
+   }
+
+}
+
+@media (max-width:400px){
+
+    .wrapper{
+
+       width:97%;
+
+       padding-bottom:3rem;
+
+    }
+
+    .title{
+
+        font-size:4rem;
+
+    }
+
+    .box-container{
+
+       grid-gap:7px;
+
+    }
+
+    .box{
+
+       padding:1.3rem 0 0.8rem 0;
+   
+
+    }
+
+}
+
+@media only screen and (min-width:701px){
+
+  .social-media-icons{
+
+      top:20px;
+
+      left:25px;
+
+  }  
+
+  .social-media-icons li{
+
+      display:block;
+
+      margin:4px 0;
+
+  }
+
+    
+
+}
+
+
+
+
+
+audio {
+
+    display:none;
+
+}
